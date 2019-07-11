@@ -1,0 +1,33 @@
+%YAML 1.1
+---
+actions:
+- utter_goodbye
+- utter_ask_time
+- utter_greet
+- utter_confirm
+- utter_ask_name
+entities:
+- time
+- name
+intents:
+- activity
+- greet
+- goodbye
+- inform
+slots:
+  name:
+    type: text
+  time:
+    type: text
+templates:
+  utter_ask_name:
+  - text: With whom ?
+  utter_ask_time:
+  - text: At what time ?
+  utter_confirm:
+  - text: Your meeting is confirmed
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello! How can I help?

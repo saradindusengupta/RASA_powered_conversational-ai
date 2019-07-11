@@ -1,0 +1,44 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_name
+- utter_ask_time
+- utter_confirm
+config:
+  store_entities_as_slots: true
+entities:
+- name
+- time
+forms: []
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- inform:
+    use_entities: true
+- activity:
+    use_entities: true
+slots:
+  name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  time:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_name:
+  - text: With whom ?
+  utter_ask_time:
+  - text: At what time ?
+  utter_confirm:
+  - text: Your meeting is confirmed
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello! How can I help?
