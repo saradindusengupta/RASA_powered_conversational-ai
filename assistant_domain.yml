@@ -1,40 +1,63 @@
 %YAML 1.1
 ---
-slots:
-  name:
-    type: text
-  time:
-    type: text
-
-
-intents:
- - greet
- - goodbye
- - inform
- - activity
-
-entities:
- - name
- - time
-
-templates:
-  utter_greet:
-    - 'Hello! How can I help?'
-  utter_goodbye:
-    - 'Talk to you later.'
-    - 'Bye bye :('
-  utter_ask_name:
-    - 'With whom ?'
-  utter_ask_time:
-    - 'At what time ?'
-  utter_confirm:
-    - 'Your meeting is confirmed'
-
-
 actions:
- - utter_greet
- - utter_goodbye
- - utter_ask_name
- - utter_ask_time
- - utter_confirm
- 
+- utter_goodbye
+- utter_greet
+- utter_confirm
+- utter_request
+- ask_confirmation
+- utter_grat_return
+- utter_form_confirm
+- utter_activity_confirm
+- utter_request
+- utter_request1
+- utter_request2
+- utter_request3
+- utter_request4
+- utter_request5
+- utter_req_meeting1
+entities:
+- time
+- name
+intents:
+- add_meeting
+- greet
+- goodbye
+- inform
+- create_account
+- negative
+- positive
+- gratitude
+slots:
+templates:
+  utter_confirm:
+  - text: Your task is completed
+  ask_confirmation:
+  - text: Is that all ?
+  utter_goodbye:
+  - text: Talk to you later.
+  utter_grat_return:
+  - text: It's my pleasure to help
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hi, I am Ami. How can I help you ?
+  utter_form_confirm:
+  - text: All the details are saved. Thank You
+  utter_activity_confirm:
+  - text: Thanks. Your activity is saved.
+  utter_request:
+  - text: Sure, I can help. Please fill up this form...don't forget the mandatory fields
+  utter_request1:
+  - text: Do you have the contact's bussiness card ? if yes, kindly scan
+  utter_request2:
+  - text: Please provide the contact's details.
+  utter_request3:
+  - text: Now complete the corporate address details
+  utter_request4:
+  - text: This all I can read from the card. Please correct if there are something wrong as I do sometimes.
+  utter_req_meeting1:
+  - text: Did you travel for this meeting ?
+  utter_request5:
+  - text: Please provide additinal details.
+
+
