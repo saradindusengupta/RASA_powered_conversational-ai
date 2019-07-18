@@ -50,6 +50,14 @@
         "text": "create a meeting"
       },
       {
+        "intent": "create_account",
+        "text": "create a account"
+      },
+      {
+        "intent": "create_account",
+        "text": "add a account"
+      },
+      {
         "intent": "goodbye",
         "text": "goodbye"
       },
