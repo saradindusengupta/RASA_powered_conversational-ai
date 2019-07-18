@@ -1,16 +1,21 @@
 {
   "action_fingerprints": {
-    "null": {
-      "slots": [
-        "location"
-      ]
-    },
     "action_listen": {
       "slots": [
         "location"
       ]
     },
+    "null": {
+      "slots": [
+        "location"
+      ]
+    },
     "utter_goodbye": {
+      "slots": [
+        "location"
+      ]
+    },
+    "utter_activity_confirm": {
       "slots": [
         "location"
       ]
@@ -26,7 +31,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
-  "trained_at": "20190715-093237",
+  "trained_at": "20190718-140850",
   "rasa_core": "0.14.5",
   "tensorflow": "1.13.1",
   "sklearn": "0.20.2"

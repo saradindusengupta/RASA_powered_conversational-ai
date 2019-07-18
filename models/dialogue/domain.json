@@ -1,13 +1,15 @@
 {
   "states": [
-    "intent_activity",
+    "intent_add_meeting",
+    "intent_create_account",
     "intent_goodbye",
+    "intent_gratitude",
     "intent_greet",
     "intent_inform",
-    "entity_name",
+    "intent_negative",
+    "intent_positive",
     "entity_time",
-    "slot_name_0",
-    "slot_time_0",
+    "entity_name",
     "prev_action_listen",
     "prev_action_restart",
     "prev_action_default_fallback",
@@ -16,10 +18,19 @@
     "prev_action_default_ask_affirmation",
     "prev_action_default_ask_rephrase",
     "prev_action_back",
-    "prev_utter_greet",
     "prev_utter_goodbye",
-    "prev_utter_ask_name",
-    "prev_utter_ask_time",
-    "prev_utter_confirm"
+    "prev_utter_greet",
+    "prev_utter_confirm",
+    "prev_ask_confirmation",
+    "prev_utter_grat_return",
+    "prev_utter_form_confirm",
+    "prev_utter_activity_confirm",
+    "prev_utter_request",
+    "prev_utter_request1",
+    "prev_utter_request2",
+    "prev_utter_request3",
+    "prev_utter_request4",
+    "prev_utter_request5",
+    "prev_utter_req_meeting"
   ]
 }
