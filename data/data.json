@@ -62,6 +62,16 @@
         "entities": []
       },
       {
+        "text": "create a account",
+        "intent": "create_account",
+        "entities": []
+      },
+      {
+        "text": "add a account",
+        "intent": "create_account",
+        "entities": []
+      },
+      {
         "text": "goodbye",
         "intent": "goodbye",
         "entities": []
