@@ -4,7 +4,6 @@ actions:
 - utter_goodbye
 - utter_greet
 - utter_confirm
-- utter_request
 - ask_confirmation
 - utter_grat_return
 - utter_form_confirm
@@ -15,7 +14,7 @@ actions:
 - utter_request3
 - utter_request4
 - utter_request5
-- utter_req_meeting1
+- utter_req_meeting
 entities:
 - time
 - name
@@ -54,7 +53,7 @@ templates:
   - text: Now complete the corporate address details
   utter_request4:
   - text: This all I can read from the card. Please correct if there are something wrong as I do sometimes.
-  utter_req_meeting1:
+  utter_req_meeting:
   - text: Did you travel for this meeting ?
   utter_request5:
   - text: Please provide additinal details.
