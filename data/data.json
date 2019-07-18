@@ -7,13 +7,58 @@
         "entities": []
       },
       {
+        "text": "Thank you",
+        "intent": "gratitude",
+        "entities": []
+      },
+      {
+        "text": "Thanks",
+        "intent": "gratitude",
+        "entities": []
+      },
+      {
+        "text": "Thanks for the help",
+        "intent": "gratitude",
+        "entities": []
+      },
+      {
+        "text": "No",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "Nope",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "Nah",
+        "intent": "negative",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "positive",
+        "entities": []
+      },
+      {
+        "text": "yup",
+        "intent": "positive",
+        "entities": []
+      },
+      {
         "text": "add a meeting",
-        "intent": "activity",
+        "intent": "add_meeting",
         "entities": []
       },
       {
         "text": "create a meeting",
-        "intent": "activity",
+        "intent": "add_meeting",
         "entities": []
       },
       {

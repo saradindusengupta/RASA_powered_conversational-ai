@@ -6,12 +6,48 @@
         "text": "Hello"
       },
       {
-        "intent": "activity",
-        "text": "create an activity"
+        "intent": "gratitude",
+        "text": "Thank you"
       },
       {
-        "intent": "activity",
-        "text": "Add a meeting"
+        "intent": "gratitude",
+        "text": "Thanks"
+      },
+      {
+        "intent": "gratitude",
+        "text": "Thanks for the help"
+      },
+      {
+        "intent": "negative",
+        "text": "No"
+      },
+      {
+        "intent": "negative",
+        "text": "Nope"
+      },
+      {
+        "intent": "negative",
+        "text": "Nah"
+      },
+      {
+        "intent": "positive",
+        "text": "yes"
+      },
+      {
+        "intent": "positive",
+        "text": "yeah"
+      },
+      {
+        "intent": "positive",
+        "text": "yup"
+      },
+      {
+        "intent": "add_meeting",
+        "text": "add a meeting"
+      },
+      {
+        "intent": "add_meeting",
+        "text": "create a meeting"
       },
       {
         "intent": "goodbye",

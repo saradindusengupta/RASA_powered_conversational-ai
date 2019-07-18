@@ -90,21 +90,55 @@
 ## story_006
 * greet
    - utter_greet
-* activity
-   - utter_ask_name
-* inform
-   - utter_ask_time
-* inform
-   - utter_confirm
-* goodbye
+* add_meeting
+   - utter_request
+   - utter_form_confirm
+   - utter_req_meeting
+*  positive
+   - utter_request5
+   - utter_form_confirm
+   - utter_activity_confirm
+## story_0006
+* greet
+   - utter_greet
+* add_meeting
+   - utter_request
+   - utter_form_confirm
+   - utter_req_meeting
+*  negative
+   - utter_form_confirm
+* gratitude
+   - utter_grat_return
+   - utter_goodbye
+## story_007
+* greet
+   - utter_greet
+* create_account
+   - utter_request
+   - utter_form_confirm
+   - utter_request1
+* negative
+   - utter_request2
+   - utter_form_confirm
+   - utter_request3
+* gratitude
+   - utter_grat_return
    - utter_goodbye
   
-## Generated Story -3687721849981936989
+## story_008
 * greet
-    - utter_greet
-* activity
-    - utter_ask_name
-* inform
-    - utter_ask_time
-* stop
+   - utter_greet
+* create_account
+   - utter_request
+   - utter_form_confirm
+   - utter_request1
+* positive
+   - utter_request4
+   - ask_confirmation
+* positive
+  - utter_form_confirm
+* gratitude
+   - utter_grat_return
+   - utter_goodbye
+
 
