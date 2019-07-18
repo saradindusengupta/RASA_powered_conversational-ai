@@ -28,7 +28,6 @@ intents:
 - negative
 - positive
 - gratitude
-slots:
 templates:
   utter_confirm:
   - text: Your task is completed
