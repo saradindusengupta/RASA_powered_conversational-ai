@@ -5,6 +5,17 @@ actions:
 - utter_greet
 - utter_confirm
 - utter_request
+- ask_confirmation
+- utter_grat_return
+- utter_form_confirm
+- utter_activity_confirm
+- utter_request
+- utter_request1
+- utter_request2
+- utter_request3
+- utter_request4
+- utter_request5
+- utter_req_meeting1
 entities:
 - time
 - name
