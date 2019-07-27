@@ -31,6 +31,9 @@
     "prev_utter_request3",
     "prev_utter_request4",
     "prev_utter_request5",
-    "prev_utter_req_meeting"
+    "prev_utter_req_meeting",
+    "prev_utter_submit_confirm",
+    "prev_account_form",
+    "active_form_account_form"
   ]
 }

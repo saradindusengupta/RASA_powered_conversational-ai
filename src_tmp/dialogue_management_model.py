@@ -6,20 +6,24 @@ from __future__ import unicode_literals
 import logging
 import rasa_core
 from rasa_core.agent import Agent
-from rasa_core.policies.keras_policy import KerasPolicy
-from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.utils import EndpointConfig
 from rasa_core.run import serve_application
 from rasa_core import config
-
+from rasa_core.policies.form_policy import FormPolicy
+from rasa_core.policies.fallback import FallbackPolicy
+from rasa_core.policies.memoization import MemoizationPolicy
+from rasa_core.policies.keras_policy import KerasPolicy
+from rasa_core.policies.mapping_policy import MappingPolicy
 logger = logging.getLogger(__name__)
 
 def train_dialogue(domain_file = '/home/saradindu/dev/Work-II/Happsales/assistant_domain.yml',
 					model_path = '/home/saradindu/dev/Work-II/Happsales/models/dialogue',
 					training_data_file = '/home/saradindu/dev/Work-II/Happsales/data/stories.md'):
 					
-	agent = Agent(domain_file, policies = [MemoizationPolicy(), KerasPolicy(max_history=3, epochs=200, batch_size=50)])
+	agent = Agent(domain_file, policies = [MemoizationPolicy(), FormPolicy(),MappingPolicy(),
+                                        FallbackPolicy(nlu_threshold=0.4,core_threshold= 0.3,fallback_action_name= "action_default_fallback"), 
+                                        KerasPolicy(max_history=3, epochs=200, batch_size=50)])
 	data = agent.load_data(training_data_file)	
 	
 

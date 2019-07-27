@@ -1,5 +1,0 @@
-{
-  "pipeline":"pretrained_embeddings_spacy",
-  "path":"/home/saradindu/dev/Work-II/Happsales/models/nlu",
-  "data":"/home/saradindu/dev/Work-II/Happsales/data/data.json"
-}

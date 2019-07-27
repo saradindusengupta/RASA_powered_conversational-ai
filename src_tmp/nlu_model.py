@@ -11,8 +11,8 @@ def train_nlu(data, configs, model_dir):
 	
 def run_nlu():
 	interpreter = Interpreter.load('/home/saradindu/dev/Work-II/Happsales/models/nlu/default/happsales')
-	print(interpreter.parse(u"I am planning my holiday to Lithuania. I wonder what is the weather out there."))
-	print(interpreter.parse(u"create an activity"))	
+	#print(interpreter.parse(u"I am planning my holiday to Lithuania. I wonder what is the weather out there."))
+	print(interpreter.parse(u"create a account"))	
 if __name__ == '__main__':
-	train_nlu('/home/saradindu/dev/Work-II/Happsales/data/data.json', 'config_spacy.json', '/home/saradindu/dev/Work-II/Happsales/models/nlu/')
+	train_nlu('/home/saradindu/dev/Work-II/Happsales/data/data.json', 'config.yml', '/home/saradindu/dev/Work-II/Happsales/models/nlu/')
 	run_nlu()
