@@ -1,0 +1,9 @@
+2019-07-27 19:06:36,648 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-27 19:06:37,013 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-27 19:07:28,511 [INFO ]  Killing Sanic server now.
+2019-07-27 19:08:58,415 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-27 19:08:58,657 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-27 19:09:53,604 [INFO ]  Killing Sanic server now.
+2019-07-27 19:12:32,453 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-07-27 19:12:32,700 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2019-07-27 19:12:58,116 [INFO ]  Killing Sanic server now.

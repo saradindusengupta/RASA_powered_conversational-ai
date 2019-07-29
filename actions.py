@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+#from future import absolute_import
+#from future import division
+#from future import unicode_literals
+
 from typing import Dict, Text, Any, List, Union, Optional
 
 from rasa_sdk import Tracker
@@ -6,7 +10,7 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
 
 
-class accountForm(FormAction):
+class AccountForm(FormAction):
     
 
     def name(self) -> Text:

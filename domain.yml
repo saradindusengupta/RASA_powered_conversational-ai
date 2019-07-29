@@ -4,7 +4,7 @@ actions:
 - utter_goodbye
 - utter_greet
 - utter_confirm
-- ask_confirmation
+- utter_ask_confirmation
 - utter_grat_return
 - utter_form_confirm
 - utter_activity_confirm
@@ -16,9 +16,7 @@ actions:
 - utter_request5
 - utter_req_meeting
 - utter_submit_confirm
-entities:
-- time
-- name
+
 intents:
 - add_meeting
 - greet
@@ -28,12 +26,35 @@ intents:
 - negative
 - positive
 - gratitude
+forms:
+- account_form
+
+entities:
+  - account_name
+  - industry
+  - turnover
+  - employee_no
+
+slots:
+  account_name:
+    type: unfeaturized
+    auto_fill: false
+  industry:
+    type: unfeaturized
+    auto_fill: false
+  turnover:
+    type: unfeaturized
+    auto_fill: false
+  employee_no:
+    type: unfeaturized
+    auto_fill: false
+
 templates:
   utter_default:
   - text: Sorry I didn't get what you mentioned. Can you ask again please.
   utter_confirm:
   - text: Your task is completed
-  ask_confirmation:
+  utter_ask_confirmation:
   - text: Is that all ?
   utter_goodbye:
   - text: Talk to you later.
@@ -68,8 +89,6 @@ templates:
     - text: "What is the annual turnover in crore ?"
   utter_employee_no:
     - text: "How many employees are there ?"
-forms:
-- account_form
 
 
 

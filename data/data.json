@@ -57,6 +57,26 @@
         "entities": []
       },
       {
+        "text": "add  meeting",
+        "intent": "add_meeting",
+        "entities": []
+      },
+      {
+        "text": "meeting",
+        "intent": "add_meeting",
+        "entities": []
+      },
+      {
+        "text": "add a new meeting",
+        "intent": "add_meeting",
+        "entities": []
+      },
+      {
+        "text": "add an meeting",
+        "intent": "add_meeting",
+        "entities": []
+      },
+      {
         "text": "create a meeting",
         "intent": "add_meeting",
         "entities": []
