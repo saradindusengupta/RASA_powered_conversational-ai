@@ -4,7 +4,7 @@ actions:
 - utter_goodbye
 - utter_greet
 - utter_confirm
-- utter_ask_confirmation
+- utter_confirmation
 - utter_grat_return
 - utter_form_confirm
 - utter_activity_confirm
@@ -15,7 +15,7 @@ actions:
 - utter_request4
 - utter_request5
 - utter_req_meeting
-- utter_submit_confirm
+
 
 intents:
 - add_meeting
@@ -26,17 +26,26 @@ intents:
 - negative
 - positive
 - gratitude
+
 forms:
 - account_form
+- account_form_one
 
 entities:
-  - account_name
+  - accountname
   - industry
   - turnover
   - employee_no
+  - contactname
+  - phone
+  - mobile
+  - email
+  - department
+  - designation
+
 
 slots:
-  account_name:
+  accountname:
     type: unfeaturized
     auto_fill: false
   industry:
@@ -48,13 +57,31 @@ slots:
   employee_no:
     type: unfeaturized
     auto_fill: false
+  contactname:
+    type: unfeaturized
+    auto_fill: false
+  phone:
+    type: unfeaturized
+    auto_fill: false
+  mobile:
+    type: unfeaturized
+    auto_fill: false
+  email:
+    type: unfeaturized
+    auto_fill: false
+  department:
+    type: unfeaturized
+    auto_fill: false
+  designation:
+    type: unfeaturized
+    auto_fill: false
 
 templates:
   utter_default:
   - text: Sorry I didn't get what you mentioned. Can you ask again please.
   utter_confirm:
   - text: Your task is completed
-  utter_ask_confirmation:
+  utter_confirmation:
   - text: Is that all ?
   utter_goodbye:
   - text: Talk to you later.
@@ -87,8 +114,21 @@ templates:
     - text: "What is the industry ?"
   utter_ask_turnover:
     - text: "What is the annual turnover in crore ?"
-  utter_employee_no:
+  utter_ask_employee_no:
     - text: "How many employees are there ?"
+  utter_ask_contactname:
+    - text: "What is the contact's name ?"
+  utter_ask_phone:
+    - text: "Provide the work phone no "
+  utter_ask_mobile:
+    - text: "Provide the mobile phone no"
+  utter_ask_email:
+    - text: "Provide the email id"
+  utter_ask_department:
+    - text: "What is the department he is working on ?"
+  utter_ask_designation:
+    - text: "What is his designation ?"
+
 
 
 

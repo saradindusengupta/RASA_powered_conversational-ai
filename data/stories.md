@@ -14,7 +14,7 @@
    - utter_request5
    - utter_form_confirm
    - utter_activity_confirm
-## story_meeting-neg
+## story_meeting_neg
 > usual_greet
 * add_meeting
    - utter_request
@@ -29,12 +29,16 @@
 > usual_greet
 * create_account
    - utter_request
+   - account_form
    - form{"name": "account_form"}
    - form{"name": null}
    - utter_form_confirm
    - utter_request1
 * negative
    - utter_request2
+   - account_form_one
+   - form{"name": "account_form_one"}
+   - form{"name": null}
    - utter_form_confirm
    - utter_request3
 * gratitude
@@ -45,25 +49,19 @@
 > usual_greet
 * create_account
    - utter_request
+   - account_form
    - form{"name": "account_form"}
    - form{"name": null}
    - utter_form_confirm
    - utter_request1
 * positive
    - utter_request4
-   - utter_ask_confirmation
+   - utter_confirmation
 * positive
   - utter_form_confirm
 * gratitude
    - utter_grat_return
    - utter_goodbye
 
-##story_test
-> usual_greet
-* create_account
-  - account_form
-  - form{"name": "account_form"}
-  - form{"name": null}
-  - utter_goodbye
 
 
