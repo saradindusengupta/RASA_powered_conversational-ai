@@ -1,3 +1,5 @@
 
 rasa==1.0.9
+matplotlib
+spacy
 git+https://github.com/apixu/apixu-python.git

@@ -15,6 +15,7 @@ actions:
 - utter_request4
 - utter_request5
 - utter_req_meeting
+- utter_slots_values
 
 
 intents:
@@ -116,6 +117,12 @@ templates:
     - text: "What is the annual turnover in crore ?"
   utter_ask_employee_no:
     - text: "How many employees are there ?"
+  utter_slots_values:
+    - text: "I am going to save the following details:\n
+             - accountname: {accountname}\n
+             - industry: {industry}\n
+             - turnover: {turnover}\n
+             - employee_no: {employee_no}"
   utter_ask_contactname:
     - text: "What is the contact's name ?"
   utter_ask_phone:

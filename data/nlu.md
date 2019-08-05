@@ -41,12 +41,12 @@
 - thank you
 - thankyou
 
-## intent:positive
+## intent:negative
 - no
 - nope 
 - nah
 
-## intent:negative
+## intent:positive
 - yes
 - yeah
 - yup

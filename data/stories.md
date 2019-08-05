@@ -32,6 +32,7 @@
    - account_form
    - form{"name": "account_form"}
    - form{"name": null}
+   - utter_slots_values
    - utter_form_confirm
    - utter_request1
 * negative
@@ -52,6 +53,7 @@
    - account_form
    - form{"name": "account_form"}
    - form{"name": null}
+   - utter_slots_values
    - utter_form_confirm
    - utter_request1
 * positive
